@@ -1,13 +1,182 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.border-top-bottom-dashed {
+    border-top: 1px dashed;
+    border-bottom: 1px dashed;
+    border-left: none;
+    border-right: none;
+}
+
+.text-shadow-white-red {
+    text-shadow: 1px 1px 2px white, /* White shadow */
+    2px 2px 4px red;
+    /* Red shadow */
+}
+
+.mybg {
+    background-color: black;
+    height: 700px;
+    background-image: url("./components/images/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blackbg {
+    background-image: url("./components/images/blackbg.PNG");
+    height: 250px;
+    overflow: hidden;
+    max-width: 100vw;
+    position: relative;
+}
+
+.slideimage {
+    padding-top: 80px;
+    width: 100%;
+}
+
+.my3bg {
+    background-image: url("./components/images/animatebg.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #f44336, #ffccbc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* Custom margin for larger screens */
+
+@media (min-width: 768px) {
+    .custom-margin-md {
+        margin-left: 350px !important;
+        /* Apply 300px margin-left for medium and larger screens */
+    }
+}
+
+.text-slate-400 {
+    color: #9CA3AF;
+    /* Adjust the color to match the desired slate shade */
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bg-gradient {
+    background: linear-gradient(to right, #f87171, #fbbf24);
+}
+
+.bg-gradient-to-right {
+    background: linear-gradient(to right, #f87171, #fbbf24);
+}
+
+.blur-lg {
+    filter: blur(120px);
+}
+
+.blur-sm {
+    filter: blur(40px);
+}
+
+.lfont {
+    font-size: 30px;
+}
+
+.mylogo {
+    width: 48px;
+    height: 48px;
+}
+
+.name {
+    text-shadow: -2px 0px #e84545, 1px 1px 0 #000, 1px -1px 0 #000;
+    font: sans-serif;
+    font-size: 30px;
+}
+
+.names {
+    text-shadow: -2px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff;
+    font: sans-serif;
+    font-size: 30px;
+}
+
+.mylink {
+    background-color: rgb(39, 61, 91);
+    width: 125px;
+    height: 28px;
+    border-radius: 9999px;
+    border-color: rgb(249 250 251);
+}
+
+.jtalklink {
+    background-color: rgb(118, 22, 19);
+    width: 225px;
+    /* height: 28px; */
+    border-radius: 9999px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.button1 {
+    background-color: rgb(162, 161, 161);
+    width: 135px;
+    height: 28px;
+    border-radius: 9999px;
+}
+
+.mybutton {
+    justify-content: center;
+}
+
+.swiper-wrapper {
+    display: flex;
+    animation: slide 50000ms linear infinite;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.swiper-slide {
+    flex: none;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .client-image {
+        width: 70px;
+    }
+    .blackbg {
+        max-width: 100vw;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.grid-component {
+    position: relative;
+    z-index: 10;
+    border-color: orange;
 }
